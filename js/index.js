@@ -28,5 +28,45 @@ $(function(){
             }
         })
     });
+    $("nav .nav li:eq(0)").click(function(){
+    	$({num:$(window).scrollTop()}).animate({num:0},{
+    		duration:1000,
+    		step:function(){
+    			$(window).scrollTop(this.num);
+    		}
+    	})
+    });
+    $("nav .nav li:eq(1)").click(function(){
+    	$({num:$(window).scrollTop()}).animate({num:700},{
+    		duration:1000,
+    		step:function(){
+    			$(window).scrollTop(this.num);
+    		}
+    	})
+    });
+    $("nav .nav li:eq(2)").click(function(){
+    	$({num:$(window).scrollTop()}).animate({num:1300},{
+    		duration:1000,
+    		step:function(){
+    			$(window).scrollTop(this.num);
+    		}
+    	})
+    });
+    $("nav .nav li:eq(3)").click(function(){
+    	$({num:$(window).scrollTop()}).animate({num:2000},{
+    		duration:1000,
+    		step:function(){
+    			$(window).scrollTop(this.num);
+    		}
+    	})
+    });
+     $("nav .nav li:eq(4)").click(function(){
+    	$({num:$(window).scrollTop()}).animate({num:3500},{
+    		duration:1000,
+    		step:function(){
+    			$(window).scrollTop(this.num);
+    		}
+    	})
+    });
 })
 
