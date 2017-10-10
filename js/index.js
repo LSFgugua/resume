@@ -15,10 +15,18 @@ $(function(){
 		// 对应按钮背景色添加
 		$(this).css({
 			"background":"#4E82D6"})
-	})
+	});
 
 	$(".backtop").backTop();
-	//$(".backtop") 返回按钮父容器     
+	//$(".backtop") 返回按钮父容器
 
+	$(".triangle").click(function () {
+        $({dNum:0}).animate({dNum:648},{
+            duration:1000,
+            step: function () {
+                $(window).scrollTop(this.dNum);
+            }
+        })
+    });
 })
 
