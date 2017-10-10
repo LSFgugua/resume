@@ -16,7 +16,9 @@ $(function(){
 		$(this).css({
 			"background":"#4E82D6"})
 	})
+
+	$(".backtop").backTop();
+	//$(".backtop") 返回按钮父容器     
+
 })
 
-$(".backtop").backTop();
-	//$(".backtop") 返回按钮父容器     
